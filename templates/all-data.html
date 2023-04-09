@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>image</title>
+</head>
+<body>
+	 
+	{% if data %}
+	{% for x in data %}
+        <p>{{x}}</p>
+	     <p>{{x.name}}</p>
+		 <img src="{{x.image_after}}" width="100px">
+		 <img src="{{x.image_before}}" width="100px">
+     {% endfor %}
+       
+		{% endif %}
+</body>
+</html>
